@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"target": "es2022",
+		"noImplicitAny": true,
+		"strict": true,
+		"noUnusedLocals": true,
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"outDir": "dist",
+		"lib": [
+			"es2015",
+			"es2017",
+            "es2022",
+			"esnext"
+		],
+		"skipLibCheck": true
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"./node_modules/**/*"
+	]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "luaudoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "bin": {
+    "ldoc": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xjwlabs/ldoc.git"
+  },
+  "keywords": [],
+  "author": "0xJWLabs <0xjwlabs@gmail.com>",
+  "homepage": "https://github.com/0xjwlabs/ldoc#readme",
+  "type": "module",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "cachedir": "^2.4.0",
+    "chokidar": "^3.6.0",
+    "fs-extra": "^11.2.0",
+    "gh-pages": "^6.1.1",
+    "node-fetch": "^3.3.2",
+    "parse-git-config": "^3.0.0",
+    "toml": "^3.0.0",
+    "unzipper": "^0.11.6",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/gh-pages": "^6.1.0",
+    "@types/node": "^20.12.12",
+    "@types/parse-git-config": "^3.0.4",
+    "@types/unzipper": "^0.10.9",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.4.5"
+  }
+}
