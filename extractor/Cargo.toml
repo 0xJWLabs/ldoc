@@ -1,0 +1,40 @@
+[package]
+name = "luaudoc"
+description = "LuauDoc is a tool for generating documentation from comments in Lua source code."
+version = "1.0.0"
+authors = ["0xJWLabs <@0xjwlabs@gmail.com>"]
+license = "MPL-2.0"
+homepage = "https://github.com/0xjwlabs/ldoc#README.md"
+repository = "https://github.com/0xjwlabs/ldoc"
+edition = "2018"
+
+[lib]
+name = "libluaudoc"
+path = "src/lib.rs"
+
+[[bin]]
+name = "luaudoc-extractor"
+path = "src/main.rs"
+
+[profile.dev]
+opt-level = 1
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+full_moon = { version = "0.18.1", features = ["stacker"] }
+walkdir = "2"
+anyhow = "1.0.28"
+codespan-reporting = "0.9.5"
+structopt = "0.3.18"
+serde = { version = "1.0.116", features = ["derive"] }
+serde_json = "1.0.58"
+pathdiff = "0.2.0"
+fs-err = "2.6.0"
+
+[dev-dependencies]
+insta = { version = "1.1.0", features = ["yaml"] }
+
+[features]
+default = ["roblox"]
+roblox = ["full_moon/roblox"]
