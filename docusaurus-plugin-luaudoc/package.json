@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-plugin-luaudoc",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Display your API docs generated from LuauDoc in Docusaurus",
   "main": "src/index.js",
   "author": "0xJWLabs <0xjwlabs@gmail.com>",
@@ -25,6 +25,6 @@
     "remark-parse": "^8.0.3",
     "remark-react": "^8.0.0",
     "remark-rehype": "^8.1.0",
-    "unified": "^9.2.2" 
+    "unified": "^9.2.2"
   }
 }
