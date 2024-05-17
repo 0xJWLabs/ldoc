@@ -21,8 +21,8 @@ dependencies:
     specifier: ^3.4.0
     version: 3.4.0(@docusaurus/core@3.3.2)(react-dom@18.3.1)(react@18.3.1)
   docusaurus-plugin-luaudoc:
-    specifier: ^1.0.3
-    version: 1.0.3
+    specifier: ^1.0.4
+    version: 1.0.4
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -4437,8 +4437,8 @@ packages:
       unist-util-is: 4.1.0
     dev: false
 
-  /docusaurus-plugin-luaudoc@1.0.3:
-    resolution: {integrity: sha512-eSrc+yLh6sCqza+FROC13hh0pL/ia9s0eick4IcnSWBFl0KhvPRmASbWqBA2Ssrg7DicVXrDz7YsHWQ44QzWXQ==}
+  /docusaurus-plugin-luaudoc@1.0.4:
+    resolution: {integrity: sha512-vpkjnwQ9s/QUENU/92KiaQrC/ptnaZ/O7ZYsj85cVZM8UQ0ImfkM6Kd7nKW8fyzMVckgmYDikdDmZpo/dr76Mg==}
     dependencies:
       '@mapbox/rehype-prism': 0.9.0
       hast-util-sanitize: 5.0.1
