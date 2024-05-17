@@ -46,7 +46,7 @@ if (execSync("git status --short --porcelain").toString().length > 0) {
 }
 
 updatePackageJsonVersion("cli/package.json")
-run("cli", "npm i --package-lock-only")
+run("cli", "pnpm install --lockfile-only")
 
 updatePackageDependencyVersion(
   "cli/template/root/package.json",
@@ -55,7 +55,7 @@ updatePackageDependencyVersion(
 )
 
 updatePackageJsonVersion("docusaurus-plugin-luaudoc/package.json")
-run("docusaurus-plugin-luaudoc", "npm i --package-lock-only")
+run("docusaurus-plugin-luaudoc", "pnpm install --lockfile-only")
 
 replaceInFile(
   "extractor/Cargo.toml",
