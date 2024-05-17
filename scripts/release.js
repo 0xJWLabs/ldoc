@@ -66,6 +66,7 @@ replaceInFile(
 run("docusaurus-plugin-luaudoc", "pnpm publish --no-git-checks")
 
 run("cli/template/root", "pnpm install --lockfile-only")
+run("extractor", "cargo clean")
 run("extractor", "cargo check")
 
 const tag = `v${version}`

@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - main
+
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        rust_version: [stable]
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Setup Rust toolchain
+      run: rustup default ${{ matrix.rust_version }}
+
+    - name: Build
+      working-directory: ./extractor
+      run: cargo build --locked --verbose
+
+    - name: Run tests
+      working-directory: ./extractor
+      run: cargo test --locked --verbose
+
+    - name: Rustfmt and Clippy
+      working-directory: ./extractor
+      run: |
+        cargo fmt -- --check
+        cargo clippy
+      if: matrix.rust_version == 'stable'
