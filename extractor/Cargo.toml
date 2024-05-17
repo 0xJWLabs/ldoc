@@ -1,7 +1,7 @@
 [package]
 name = "luaudoc"
 description = "LuauDoc is a tool for generating documentation from comments in Lua source code."
-version = "1.0.4"
+version = "1.0.6"
 authors = ["0xJWLabs <@0xjwlabs@gmail.com>"]
 license = "MPL-2.0"
 homepage = "https://github.com/0xjwlabs/ldoc#README.md"
