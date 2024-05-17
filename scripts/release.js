@@ -63,7 +63,7 @@ replaceInFile(
   `version = "${version}"`
 )
 
-run("docusaurus-plugin-luaudoc", "pnpm publish")
+run("docusaurus-plugin-luaudoc", "pnpm publish --no-git-checks")
 
 run("cli/template/root", "pnpm install --lockfile-only")
 run("extractor", "cargo check")
@@ -73,7 +73,7 @@ run(process.cwd(), "git add .")
 run(process.cwd(), `git commit -m "Release version ${version}"`)
 run(process.cwd(), `git tag ${tag}`)
 
-run("cli", "pnpm publish")
+run("cli", "pnpm publish --no-git-checks")
 
 run("extractor", "cargo publish")
 
