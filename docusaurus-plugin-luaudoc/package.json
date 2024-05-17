@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-plugin-luaudoc",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Display your API docs generated from LuauDoc in Docusaurus",
   "main": "src/index.js",
   "author": "0xJWLabs <0xjwlabs@gmail.com>",
