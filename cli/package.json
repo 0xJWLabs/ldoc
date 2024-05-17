@@ -10,7 +10,7 @@
     "node": ">=14"
   },
   "bin": {
-    "ldoc": "dist/index.js"
+    "luaudoc": "dist/index.js"
   },
   "repository": {
     "type": "git",
